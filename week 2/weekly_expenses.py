@@ -1,0 +1,18 @@
+print("=========================================")
+print("student_weekly_expense_calcultor_15875")
+print("=========================================")
+print()
+name = input("Student Name; ")
+transport_cost = int(input("Enter daily transport cost; "))
+feeding_cost = int(input("Enter daily feeding cost; "))
+campus_days = int(input("Enter the number of days on campus; "))
+other_expenses = int(input("Enter other weekly expenses; ")) 
+transport_total = transport_cost * campus_days  
+feeding_total = feeding_cost * campus_days
+print()
+print("WEEKLY EXPENSE SUMMARY")
+print("Student:", name)
+print("Transport total:NGN", transport_cost * campus_days)
+print("Feeding total:NGN", feeding_cost * campus_days)
+print("Other expenses:NGN", other_expenses)
+print("Weekly total:NGN", transport_total + feeding_total + other_expenses)
